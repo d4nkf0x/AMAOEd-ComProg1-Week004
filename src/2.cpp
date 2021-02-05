@@ -33,12 +33,16 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    cout << "Hello" << endl;
-    cout << "Hello" << endl;
-    cout << "Hello" << endl;
+    cout << "H" << endl;
+    cout << "e" << endl;
+    cout << "l" << endl;
     cout << "l" << endl;
     cout << "o" << endl;
-    cout << "World!" << endl;
+    cout << "W" << endl;
+    cout << "o" << endl;
+    cout << "r" << endl;
+    cout << "l" << endl;
+    cout << "d" << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
@@ -46,3 +50,4 @@ int main() {
     _pause();
     return EXIT_SUCCESS;
 }
+// 
