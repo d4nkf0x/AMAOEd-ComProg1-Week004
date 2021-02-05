@@ -1,51 +1,83 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "build",
             "type": "shell",
-            "label": "[g++] Compile for Windows",
-            "command": "C:/ProgramData/chocolatey/bin/g++.exe",
-            "args": [ "-g", "-o", "build/main", "src/main.cpp" ],
-            "problemMatcher": ["$gcc"],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": true,
-                "clear": false
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-c",
+                    "mingw32-make"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "make"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "make"
+                ]
             }
         },
         {
+            "label": "build & run",
             "type": "shell",
-            "label": "[g++] Compile for Linux",
-            "command": "/usr/bin/g++",
-            "args": [ "-g", "-o", "build/main", "src/main.cpp" ],
-            "problemMatcher": ["$gcc"],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": true,
-                "clear": false
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-c",
+                    "'mingw32-make run'"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make run'"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make run'"
+                ]
             }
         },
         {
+            "label": "clean",
             "type": "shell",
-            "label": "[clang++] Compile for Mac OS",
-            "command": "/usr/bin/clang++",
-            "args": [ "-std=c++17", "-stdlib=libc++", "-g", "-o", "build/main", "src/main.cpp" ],
-            "problemMatcher": ["$gcc"],
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "shared",
-                "showReuseMessage": true,
-                "clear": false
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-c",
+                    "'mingw32-make clean'"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
             }
         }
     ]
