@@ -34,11 +34,7 @@ int main() {
     // ***********************************************************
 
     cout << "Hello" << endl;
-    cout << "Hello" << endl;
-    cout << "Hello" << endl;
-    cout << "l" << endl;
-    cout << "o" << endl;
-    cout << "World!" << endl;
+    cout << "World" << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting

@@ -33,15 +33,11 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
 
-    cout << "H";
-    cout << "e";
+    cout << "Hello" << endl;
+    cout << "W";
+    cout << "o";
+    cout << "r";
     cout << "l";
-    cout << "l";
-    cout << "o" << endl;
-    cout << "W" ;
-    cout << "o" ;
-    cout << "r" ;
-    cout << "l" ;
     cout << "d" << endl;
 
     // ********************** DO NOT CHANGE **********************
