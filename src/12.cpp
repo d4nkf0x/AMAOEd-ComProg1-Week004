@@ -36,7 +36,7 @@ int main() {
     cout << "Enter height of right triangle: ";
     cin >> height;
     spaces = height;
-    for(int i = 0; i <= height; i++){
+    for(int i = 0; i < height; i++){
         for(int x = 0;x < spaces;x++){
             cout << " ";
             continue;

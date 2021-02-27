@@ -35,7 +35,7 @@ int main() {
     int height, i = 0,x = 0,chars = 1;
     cout << "Enter height of right triangle: ";
     cin >> height;
-    while(i <= height){
+    while(i < height){
         if(x < chars){
             cout << "*";
             x++;
