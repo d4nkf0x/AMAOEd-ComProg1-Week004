@@ -59,7 +59,7 @@ int main() {
         chars--;
         spaces++;
         i++;
-    }while(i<=height);
+    }while(i<height);
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
