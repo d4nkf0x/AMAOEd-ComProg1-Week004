@@ -41,8 +41,14 @@ int main() {
     // Place your code logic after this comment line
     // ***********************************************************
     short num;
-    cout << "Enter Number: ";
+    cout << "Enter Number[10-99]: ";
     cin >> num;
+    if(num < 10){
+        num = 10;
+    }
+    if(num > 99){
+        num = 99;
+    }
     printdigits(num);
     cout << endl;
     // ********************** DO NOT CHANGE **********************

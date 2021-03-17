@@ -25,7 +25,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/bin/g++",
-            "args": ["-g","${workspaceFolder}/src/20.cpp","-o","${workspaceFolder}/src/20"],
+            "args": ["-g","${workspaceFolder}/src/classtest.cpp","-o","${workspaceFolder}/src/classtest"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
