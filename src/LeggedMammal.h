@@ -1,12 +1,18 @@
+#include <string>
 class LeggedMammal{
-    public:
+    private:
         int legs;  
         bool hasTail;
         char* fur[50];
+    public:
+        LeggedMammal() = default;
         LeggedMammal(int Legs,char* Fur,bool HasTail);
         int getLegs();
         char* getFur();
         bool getTail();
+        void setLegs(int x);
+        void setFur(char* x);
+        void setTail(bool x);
 };
 LeggedMammal::LeggedMammal(int Legs,char* Fur,bool HasTail){
     this->legs = Legs;
@@ -22,3 +28,14 @@ char* LeggedMammal::getFur(){
 bool LeggedMammal::getTail(){
     return this->hasTail;
 }
+void LeggedMammal::setLegs(int x){
+    this->legs = x;
+}
+void LeggedMammal::setFur(char* x){
+    *this->fur = x; 
+}
+void LeggedMammal::setTail(bool x){
+    this->hasTail = x;
+}
+
+
