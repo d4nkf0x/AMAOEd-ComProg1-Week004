@@ -25,7 +25,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "/usr/bin/g++",
-            "args": ["-g","${workspaceFolder}/src/25.cpp","-o","${workspaceFolder}/src/25"],
+            "args": ["-g","${workspaceFolder}/src/28.cpp","-o","${workspaceFolder}/src/28"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

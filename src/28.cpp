@@ -30,18 +30,18 @@ using namespace std;
 // "main()", or after this "main()" provided you added reference
 // before this "main()" function.
 //////////////////////////////////////////////////////////////////
+
+char* returnVal(){
+    return "This is it!";
+}
 int main() {
     // ************************** TO DO **************************
     // Place your code logic after this comment line
     // ***********************************************************
-    char a[10];
-    char (*b)[10] = &a;
-    for(int i = 0; i < 10; i++){
-        cout << (float*)&a[i] << " " << a[i];
-        cout << " " << &b[i] << " " << b[i] << endl; 
-    }
-    cout << endl; 
-
+    char* a;
+    char* *b = &a;
+    *b = returnVal();
+    cout << a << endl;
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
     // ***********************************************************

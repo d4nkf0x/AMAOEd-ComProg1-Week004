@@ -34,13 +34,10 @@ int main() {
     // ************************** TO DO **************************
     // Place your code logic after this comment line
     // ***********************************************************
-    char a[10];
-    char (*b)[10] = &a;
-    for(int i = 0; i < 10; i++){
-        cout << (float*)&a[i] << " " << a[i];
-        cout << " " << &b[i] << " " << b[i] << endl; 
-    }
-    cout << endl; 
+    float a;
+    float *b = &a;
+    cout << &a << endl;
+    cout << b << endl;
 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting

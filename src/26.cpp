@@ -30,18 +30,17 @@ using namespace std;
 // "main()", or after this "main()" provided you added reference
 // before this "main()" function.
 //////////////////////////////////////////////////////////////////
+void changeVal(int *x){
+    *x = 27946;
+}
 int main() {
     // ************************** TO DO **************************
     // Place your code logic after this comment line
     // ***********************************************************
-    char a[10];
-    char (*b)[10] = &a;
-    for(int i = 0; i < 10; i++){
-        cout << (float*)&a[i] << " " << a[i];
-        cout << " " << &b[i] << " " << b[i] << endl; 
-    }
-    cout << endl; 
-
+    int x = 654321;
+    cout << "Before: " << x << endl;
+    changeVal(&x);
+    cout << "After: " << x << endl; 
     // ********************** DO NOT CHANGE **********************
     // Print a new line and ask user for any key before exiting
     // ***********************************************************
